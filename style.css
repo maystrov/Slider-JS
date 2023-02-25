@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+    margin-top: 30vh;
+    background-color: #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itk-slider {
+    width: 70%;
+    height: 30%;
+    margin: 1vw  auto;
+    display: flex;
+    align-self: center;
+}
+
+.slider-window {
+    width: 80%;
+    object-fit: fit-content;
+}
+
+img {
+    width: 100%;
+    /* height: 100%;    */
+}
+/*   как сделать все картинки одного размера, чтобы не плясал блок? */
+.nav-button {
+    border: none;
+    background-color: inherit;
+    width: 10%;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s;
+    color: #999;
+
+
+}
+.nav-button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.dot {
+    /* cursor: pointer; */
+    height: 0.5vw;
+    width: 3vw;
+    margin: 8px 3px;
+    /* border-radius: 50%; */
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.3s  ;
+}
+
+.active, .dot:hover {
+    background-color: #fff;
+}
+
+.dots {
+    text-align: center;
+    display: block;
+}
